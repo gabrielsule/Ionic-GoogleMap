@@ -1,37 +1,55 @@
+Ionic-ngCordova-Google Map
+======
 **Ionic - GoogleMap** es un ejemplo de la usabilidad de ionic con librerias de Cordova para la geolocalizacion.
 
+## Download
+* [Version 1.0](https://github.com/gabrielsule/Ionic-GoogleMap/archive/master.zip)
+* 
+
+## Usage
+```
+$ git clone https://github.com/gabrielsule/Ionic-GoogleMap.git
+```
+
 ## Instalando Ionic
-```npm install -g ionic cordova
-...```
+```
+npm install -g ionic cordova
+```
 
 ## Creando una app
 ```ionic start myapp blank
 ...```
 
 ## Instalando ngCordova 
-```cd myapp
-   bower install ngCordova
-...```
+```
+cd myapp
+
+bower install ngCordova
+```
 
 ## Agregando librerias a index.html
-```<script src="lib/ngCordova/dist/ng-cordova.js"></script>
+```
+<script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
 <script src="js/asset/app.js"></script>
+
 <script src="js/asset/controller.js"></script>
+
 <script src="lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
+
 <script src="http://maps.google.com/maps/api/js?key=API_de_google"></script>
-...```
+```
 
 
 ## Llamando a la libreria ngCordova desde AngularJS
-
-```var myapp = angular.module('starter', ['ionic', 'ngCordova', 'myControl'])
-...```
+```
+var myapp = angular.module('starter', ['ionic', 'ngCordova', 'myControl'])
+```
 
 ## Para que no existan problemas al cargar el mapa
-
-```google.maps.event.addDomListener(window, "load", initialize);
-...```
-
+```
+google.maps.event.addDomListener(window, "load", initialize);
+```
 
 ### Librerias externas
 * [Ionic](http://ionicframework.com/)
